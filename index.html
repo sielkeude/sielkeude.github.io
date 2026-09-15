@@ -4,77 +4,100 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Knowledge Master | 学者同行</title>
-  <link rel="stylesheet" href="css/style.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+                   "Microsoft YaHei", sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #660099 0%, #4a0072 100%);
+      color: #fff;
+      padding: 24px;
+    }
+
+    .lang-select {
+      text-align: center;
+      max-width: 560px;
+      width: 100%;
+    }
+
+    .lang-select h1 {
+      font-size: 2.6rem;
+      margin-bottom: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .lang-select .sub {
+      font-size: 1.05rem;
+      opacity: 0.9;
+      margin-bottom: 56px;
+    }
+
+    .lang-btns {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .lang-btn {
+      display: block;
+      width: 200px;
+      padding: 36px 20px;
+      background: rgba(255,255,255,0.12);
+      border: 2px solid rgba(255,255,255,0.35);
+      border-radius: 18px;
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.25s;
+    }
+
+    .lang-btn:hover {
+      background: rgba(255,255,255,0.26);
+      transform: translateY(-5px);
+      border-color: #fff;
+      box-shadow: 0 16px 32px rgba(0,0,0,0.2);
+    }
+
+    .lang-btn .flag {
+      font-size: 2.8rem;
+      display: block;
+      margin-bottom: 14px;
+    }
+
+    .lang-btn .name {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    @media (max-width: 520px) {
+      .lang-select h1 { font-size: 1.9rem; }
+      .lang-btn { width: 100%; max-width: 260px; }
+    }
+  </style>
 </head>
 <body>
 
-  <!-- 导航栏 -->
-  <header class="navbar">
-    <div class="container">
-      <a href="index.html" class="logo">Knowledge Master</a>
-      <nav>
-        <a href="index.html" class="active">首页</a>
-        <a href="courses.html">课程</a>
-        <a href="about.html">关于我</a>
-      </nav>
+  <div class="lang-select">
+    <h1>Knowledge Master</h1>
+    <p class="sub">学者同行 · AP Learning Resources</p>
+
+    <div class="lang-btns">
+      <a href="zh/index.html" class="lang-btn">
+        <span class="flag">🇨🇳</span>
+        <span class="name">中文</span>
+      </a>
+      <a href="en/index.html" class="lang-btn">
+        <span class="flag">🇬🇧</span>
+        <span class="name">English</span>
+      </a>
     </div>
-  </header>
-
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container">
-      <h1>Knowledge Master | 学者同行</h1>
-      <p>
-        这里汇集了 AP 微观经济、宏观经济、心理学、统计学、生物学的
-        CB 官方 CED、往年真题、题库，免费提供给学生们学习使用。
-      </p>
-    </div>
-  </section>
-
-  <!-- 使用方法 -->
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">使用方法</h2>
-      <p class="section-subtitle">三步开始你的学习</p>
-
-      <div class="steps">
-        <div class="step">
-          <div class="num">1</div>
-          <div>点击上方「课程」进入对应科目</div>
-        </div>
-        <div class="step">
-          <div class="num">2</div>
-          <div>下载讲义和真题</div>
-        </div>
-        <div class="step">
-          <div class="num">3</div>
-          <div>配合 CB 题库练习</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 导览 -->
-  <section class="section" style="background:#fff; padding-top:0;">
-    <div class="container">
-      <h2 class="section-title">开始探索</h2>
-      <p class="section-subtitle">选择你想去的地方</p>
-
-      <div class="guide-btns">
-        <a href="courses.html" class="guide-btn">📚 浏览课程</a>
-        <a href="courses.html" class="guide-btn secondary">📄 下载资源</a>
-        <a href="about.html" class="guide-btn secondary">👤 关于我</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- 页脚 -->
-  <footer>
-    <div class="container">
-      © 2025 Knowledge Master | 学者同行 · 保留所有权利<br>
-      本站内容免费供学习使用，未经许可不得转载或商用。
-    </div>
-  </footer>
+  </div>
 
 </body>
 </html>
