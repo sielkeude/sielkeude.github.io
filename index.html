@@ -3,78 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Knowledge Master | 学者同行</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>PDF 下载测试</title>
+  <style>
+    body {
+      font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 60px 24px;
+      color: #1e293b;
+      line-height: 1.8;
+    }
+    h1 { color: #2563eb; }
+    .download-btn {
+      display: inline-block;
+      margin: 8px 8px 8px 0;
+      padding: 12px 24px;
+      background: #2563eb;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 15px;
+      transition: background 0.2s;
+    }
+    .download-btn:hover {
+      background: #1e40af;
+    }
+  </style>
 </head>
 <body>
+  <h1>PDF 下载测试</h1>
+  <p>点击下面的按钮，看能不能下载 PDF：</p>
 
-  <!-- 导航栏 -->
-  <header class="navbar">
-    <div class="container">
-      <a href="index.html" class="logo">Knowledge Master</a>
-      <nav>
-        <a href="index.html" class="active">首页</a>
-        <a href="courses.html">课程</a>
-        <a href="about.html">关于我</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container">
-      <h1>Knowledge Master | 学者同行</h1>
-      <p>
-        这里汇集了 AP 微观经济、宏观经济、心理学、统计学、生物学的
-        CB 官方 CED、往年真题、题库，免费提供给学生们学习使用。
-      </p>
-    </div>
-  </section>
-
-  <!-- 使用方法 -->
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">使用方法</h2>
-      <p class="section-subtitle">三步开始你的学习</p>
-
-      <div class="steps">
-        <div class="step">
-          <div class="num">1</div>
-          <div>点击上方「课程」进入对应科目</div>
-        </div>
-        <div class="step">
-          <div class="num">2</div>
-          <div>下载讲义和真题</div>
-        </div>
-        <div class="step">
-          <div class="num">3</div>
-          <div>配合 CB 题库练习</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 导览 -->
-  <section class="section" style="background:#fff; padding-top:0;">
-    <div class="container">
-      <h2 class="section-title">开始探索</h2>
-      <p class="section-subtitle">选择你想去的地方</p>
-
-      <div class="guide-btns">
-        <a href="courses.html" class="guide-btn">📚 浏览课程</a>
-        <a href="courses.html" class="guide-btn secondary">📄 下载资源</a>
-        <a href="about.html" class="guide-btn secondary">👤 关于我</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- 页脚 -->
-  <footer>
-    <div class="container">
-      © 2025 Knowledge Master | 学者同行 · 保留所有权利<br>
-      本站内容免费供学习使用，未经许可不得转载或商用。
-    </div>
-  </footer>
-
+  <a class="download-btn" href="files/sample.pdf" download>
+    📄 下载测试 PDF
+  </a>
 </body>
 </html>
