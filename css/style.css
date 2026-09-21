@@ -1,11 +1,11 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
-  --primary: #660099;         /* 曼大紫 */
-  --primary-dark: #4a0072;    /* 深紫 */
+  --primary: #2563eb;
+  --primary-dark: #1e40af;
   --text: #1e293b;
   --text-light: #64748b;
-  --bg: #f5f0fa;              /* 浅紫背景 */
+  --bg: #f8fafc;
   --card: #ffffff;
   --border: #e2e8f0;
 }
@@ -60,22 +60,9 @@ body {
   color: var(--primary);
 }
 
-.navbar nav a.lang-switch {
-  padding: 5px 14px;
-  border: 1px solid var(--primary);
-  border-radius: 999px;
-  color: var(--primary);
-  font-size: 0.85rem;
-}
-
-.navbar nav a.lang-switch:hover {
-  background: var(--primary);
-  color: #fff;
-}
-
 /* ===== Hero 区 ===== */
 .hero {
-  background: linear-gradient(135deg, #660099 0%, #4a0072 100%);
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
   color: #fff;
   padding: 80px 0 70px;
   text-align: center;
@@ -133,7 +120,7 @@ body {
 
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(102,0,153,0.15);   /* 改成紫色 */
+  box-shadow: 0 12px 28px rgba(37,99,235,0.12);
   border-color: var(--primary);
 }
 
@@ -211,12 +198,12 @@ body {
 }
 
 .guide-btn.secondary:hover {
-  background: #f3e8ff;    /* 浅紫，原来是 #eff6ff */
+  background: #eff6ff;
 }
 
-/* ===== 页面头 ===== */
+/* ===== 课程详情页 ===== */
 .page-header {
-  background: linear-gradient(135deg, #660099 0%, #4a0072 100%);
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
   color: #fff;
   padding: 56px 0;
   text-align: center;
@@ -232,7 +219,6 @@ body {
   font-size: 0.98rem;
 }
 
-/* ===== 课程详情页 ===== */
 .course-intro {
   background: #fff;
   border: 1px solid var(--border);
@@ -337,7 +323,7 @@ body {
 
 .contact-list a {
   padding: 8px 20px;
-  background: #f3e8ff;    /* 浅紫 */
+  background: #eff6ff;
   color: var(--primary-dark);
   text-decoration: none;
   border-radius: 999px;
@@ -346,7 +332,7 @@ body {
 }
 
 .contact-list a:hover {
-   background: #e9d5ff; 
+  background: #dbeafe;
 }
 
 /* ===== 页脚 ===== */
@@ -375,33 +361,3 @@ footer a {
   .download-item { flex-direction: column; align-items: flex-start; gap: 14px; }
   .download-btn { width: 100%; text-align: center; }
 }
-
-/* ===== 页面载入动画（慢速） ===== */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.hero,
-.section,
-.page-header,
-.about-card {
-  animation: fadeInUp 1.2s ease-out;   /* 1.2 秒，比较慢 */
-}
-
-/* 卡片逐个出现，间隔更大 */
-.grid .card {
-  animation: fadeInUp 1.2s ease-out backwards;
-}
-.grid .card:nth-child(1) { animation-delay: 0.15s; }
-.grid .card:nth-child(2) { animation-delay: 0.3s; }
-.grid .card:nth-child(3) { animation-delay: 0.45s; }
-.grid .card:nth-child(4) { animation-delay: 0.6s; }
-.grid .card:nth-child(5) { animation-delay: 0.75s; }
-.grid .card:nth-child(6) { animation-delay: 0.9s; }
